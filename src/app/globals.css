@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-bg: #F8FAFC;
+  --color-slate-surface: #FFFFFF;
+  --color-slate-border: #E2E8F0;
+  --color-slate-border-hover: #CBD5E1;
+  --color-slate-text: #0F172A;
+  --color-slate-text-secondary: #475569;
+  --color-slate-text-muted: #94A3B8;
+  --color-slate-accent: #6366F1;
+  --color-slate-accent-light: #EEF2FF;
+  --color-slate-accent-hover: #4F46E5;
+
+  --color-success: #22C55E;
+  --color-success-bg: #F0FDF4;
+  --color-error: #EF4444;
+  --color-error-bg: #FEF2F2;
+  --color-warning: #F59E0B;
+  --color-warning-bg: #FFFBEB;
+  --color-info: #3B82F6;
+  --color-info-bg: #EFF6FF;
+
+  --color-coaching: #6366F1;
+  --color-operations: #10B981;
+  --color-comptoir: #F59E0B;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--color-slate-bg);
+  color: var(--color-slate-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Safe area padding for mobile devices */
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 0px);
+}
